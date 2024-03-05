@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const{ Expense }=require('./schema')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-app.use(cors)
+app.use(cors())
 const app= express()
 app.use(bodyParser.json())
 async function connectToDB(){
